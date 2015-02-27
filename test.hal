@@ -1,0 +1,7 @@
+loadrt threads
+loadrt siggen
+addf siggen.0.update thread1
+setp siggen.0.amplitude 10
+setp siggen.0.offset 10
+net T siggen.0.triangle slice-viewer.Z
+start
